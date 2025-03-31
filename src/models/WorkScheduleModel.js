@@ -3,10 +3,6 @@ const Schema = mongoose.Schema;
 
 const WorkScheduleSchema = new Schema(
     {
-        maNhanVien: {
-            type: String,
-            required: true
-        },
         ngayLam: {
             type: Date
         },

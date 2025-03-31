@@ -4,6 +4,7 @@ import MovieScreeningRouter from "./movieScreenings.js"
 import EmployeeRouter from "./employees.js"
 import WorkScheduleRouter from "./workSchedule.js"
 import TicketRouter from "./tickets.js"
+import WorkScheduleEmployeeRouter from "./workScheduleEmployee.js"
 
 export default function routes(app) {
     app.get("/", (req, res) => {
@@ -16,4 +17,6 @@ export default function routes(app) {
     app.use("/employees", EmployeeRouter)
     app.use("/workSchedule", WorkScheduleRouter)
     app.use("/tikets", TicketRouter)
+    app.use("/workScheduleEmployees", WorkScheduleEmployeeRouter)
+
 }
